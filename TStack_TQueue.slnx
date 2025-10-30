@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="TStack_TQueue/TStack_TQueue.vcxproj" Id="6a71574f-3e09-4167-9119-fdc2c1fad02a" />
+</Solution>
