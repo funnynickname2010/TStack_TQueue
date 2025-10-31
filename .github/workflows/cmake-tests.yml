@@ -11,18 +11,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout your repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2: Configure and build using CMake
+      # Clean build folder (important!)
+      - name: Clean build directory
+        run: |
+          rm -rf build
+
       - name: Configure project with CMake
         run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 
       - name: Build project
         run: cmake --build build --config Release
 
-      # Step 3: Run tests
       - name: Run unit tests
         run: |
           cd build
