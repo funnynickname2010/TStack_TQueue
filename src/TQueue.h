@@ -33,9 +33,6 @@ public:
   size_t GetCapacity() const;
 };
 
-
-#include "tqueue.h"
-
 template <typename T>
 TQueue<T>::TQueue(size_t initialSize)
 {
